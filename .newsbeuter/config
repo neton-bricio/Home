@@ -1,0 +1,34 @@
+#refresh-on-startup no
+#auto-reload no
+reload-threads 10
+#reload-time 60
+oldreader-min-items 10
+history-limit 15
+#keep-articles-days 30  ###en teste
+download-retries 5
+download-timeout 60
+#download-path "~/Músicas/Z-podcast/%h/%n"
+max-download-speed 1024
+max-items 100
+#podcast-auto-enqueue yes 
+notify-beep yes 
+browser iceweasel 2>/dev/nul &
+cleanup-on-quit yes
+#delete-read-articles-on-quit yes 
+#player "mpg123" 
+user-agent "Liferea/1.4.14 (Linux; en_US.UTF8; http://liferea.sf.net/)"
+html-renderer internal
+save-path  "~/.newsbeuter/Artigos"  
+cookie-cache "~/.newsbeuter/cookies.txt"
+error-log "~/.newsbeuter/error.log"
+#notify-format "%d new articles (%n unread articles, %f unread feeds)"
+#notify-program "~/.newsbeuter/newsbeuter-notify"
+#----------------------------------------------------------------------------
+#Macro
+#----------------------------------------------------------------------------
+macro y set browser "mpv --ytdl-format=18 --ontop %u"; open-in-browser ; set browser "palemoon %u"
+macro d set browser "youtube-dl -t %u"; open-in-browser ; set browser "/usr/bin/palemoon %u"
+macro e set browser "mpv %u"; open-in-browser ; set browser "palemoon %u"
+macro w set browser "mpv --ytdl-format=worst --ontop %u"; open-in-browser ; set browser "palemoon %u"
+macro r set browser "mpv --ontop %u"; open-in-browser ; set browser "palemoon %u"
+

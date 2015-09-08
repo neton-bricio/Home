@@ -1,0 +1,16 @@
+i: /home/pekman/MEOCloud/Pekwm/Wbar/Imagens/Mac Carbon.png
+c: wbar --bpress --above-desk --nofont --pos bottom --isize 50 --idist 2 --nanim 4 --falfa 95
+t: /10
+
+i: /home/pekman/MEOCloud/Pekwm/Wbar/Wbar.Manjaro-Fussion _Hologreen/earth.png
+c: wbar-config
+t: Config
+
+i: /home/pekman/MEOCloud/Pekwm/Wbar/Wbar.Manjaro-Fussion _Hologreen/thunar.png
+c: xfe
+t: Arquivos
+
+i: /home/pekman/MEOCloud/Pekwm/Wbar/Wbar.Manjaro-Fussion _Hologreen/firefox.png
+c: palemoon
+t: Browser
+

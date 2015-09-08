@@ -1,0 +1,7 @@
+# HTTP Cookie File
+# This is a generated file!  Do not edit.
+# [domain  subdomains  path  secure  expiry_time  name  value]
+
+.kat.cr	TRUE	/	FALSE	1473210249	lang_detected	pt
+.kat.cr	TRUE	/	FALSE	1473210249	lang_code	en
+.newalbumreleases.net	TRUE	/	FALSE	1473199296	__cfduid	d649d490c656d9f5a320a75c4370b92af1441674507

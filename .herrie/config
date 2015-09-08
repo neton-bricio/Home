@@ -1,0 +1,36 @@
+#~/.herrie/config
+#conf by pekman <pekman@openmailbox.org>
+
+#---------------------------------------------
+#Audio device | Audio padrão
+#---------------------------------------------
+audio.output.alsa.device=default
+audio.output.alsa.mixer=PCM
+
+#---------------------------------------------
+#Theme preferences | Preferências do tema
+#---------------------------------------------
+gui.color.enabled=yes
+gui.color.bar1.bg=blue
+gui.color.bar2.bg=green
+gui.color.bar.fg=white
+gui.color.block.bg=black
+gui.color.block.fg=white
+gui.color.deselect.bg=white
+gui.color.deselect.fg=black
+gui.color.marked.fg=black
+gui.color.marked.bg=red
+gui.color.select.bg=cyan
+gui.color.select.fg=black
+gui.input.confirm=no
+gui.input.may_quit=yes
+gui.vfslist.scrollpages=no
+gui.browser.defaultpath=~/Músicas
+
+#---------------------------------------------
+#Player profile | Configurações do player
+#---------------------------------------------
+playq.dumpfile=~/.herrie/autosave.xspf
+playq.autoplay=yes
+playq.xmms=no
+scrobbler.dumpfile=~/.herrie/scrobbler.queue

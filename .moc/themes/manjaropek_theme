@@ -1,0 +1,35 @@
+# ManjaroPek by Pekman {echo; manjarogeek.org}
+# best viewed on shaded or black terminal
+
+background		= default	default
+frame			= cyan		default bold
+window_title		= red		default
+directory		= red 		default
+selected_directory	= yellow	default
+playlist		= black		default
+selected_playlist	= magenta	default
+file			= green		default
+selected_file		= yellow		default
+marked_file		= white		blue	bold
+marked_selected_file	= magenta		default	bold
+info			= cyan		black
+status			= magenta	default
+title			= red		default
+state			= magenta	default
+current_time		= magenta	default
+time_left		= blue		default
+total_time		= blue		default
+time_total_frames	= magenta	default
+sound_parameters	= blue		default
+legend			= magenta	default
+disabled		= black		default
+enabled			= yellow	default
+empty_mixer_bar		= green		default
+filled_mixer_bar	= black		green
+empty_time_bar		= green		default
+filled_time_bar		= black		green
+entry			= yellow	default
+entry_title		= red		default
+error			= red		default
+message			= yellow	default
+plist_time		= magenta	default

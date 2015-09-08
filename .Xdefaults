@@ -1,0 +1,98 @@
+! URXVT FONTS
+!------------------------------------------------
+
+URxvt*font: xft:Inconsolata-Regular:pixelsize=14
+URxvt*boldFont: xft:Inconsolata-Bold:pixelsize=14
+URxvt*letterSpace: 0
+URxvt*allow_bold: true
+
+!-------------------------------------------------------------------------------
+! URXVT Options
+!-------------------------------------------------------------------------------
+URxvt.colorUL: #DE3A3A
+
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+Xft.autohint: 1
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+Xft.rgba: rgb
+Xft.lcdfilter: lcddefault
+
+!-------------------------------------------------------------------------------
+!Perl
+!-------------------------------------------------------------------------------
+!URxvt.perl-ext-common: default,matcher,clipboard
+URxvt.perl-ext-common: default,matcher,tabbedex,vtwheel,clipboard
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-launcher: /usr/bin/dillo
+URxvt.underlineURLs: True
+URxvt.matcher.button: 1
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.iso14755: False
+URxvt.copyCommand: xsel -ib
+URxvt.pasteCommand: xsel -ob
+
+!-------------------------------------------------------------------------------
+! URXVT FULLSCREEN TOGGLE
+!-------------------------------------------------------------------------------
+URxvt.keysym.F11: perl:fullscreen:switch
+
+!------------------------------------------------------------------------------- 
+!Misc
+!-------------------------------------------------------------------------------
+URxvt.scrollBar:            simply
+URxvt.mouseWheelScrollPage: true
+URxvt*.transparent: false
+URxvt*.shading: 0
+
+!-------------------------------------------------------------------------------
+! URXVT WEECHAT ESPECIFICATIONS
+!-------------------------------------------------------------------------------
+URxvt*urgentOnBell: true
+
+!-------------------------------------------------------------------------------
+! URXVT ICON
+!-------------------------------------------------------------------------------
+!URxvt.iconFile: /home/thiago/.icons/Numix-Blue-Flat/apps/scalable/terminal.svg
+URxvt.iconFile: /home/pekman/.icons/Faenza/apps/scalable/terminal.svg
+
+
+
+!------------------------------------------------------------------------------- 
+! URXVT COLORS
+!------------------------------------------------------------------------------- 
+
+!*background: 				#0B2A34
+*background: 				#222222
+*foreground: 				#FFFFFF
+
+!black
+*color0: 					#222222
+*color8: 					#666666
+!red
+*color1: 					#E84F4F
+*color9: 					#D23D3D
+!green
+*color2: 					#34be5b
+*color10: 					#00CC77
+!yellow
+*color3: 					#FEA63C
+*color11: 					#FF9544
+!blue
+*color4: 					#005F77
+*color12: 					#00A2FF
+!magenta
+*color5: 					#B7416E
+*color13: 					#E16A98
+!cyan
+*color6: 					#787DAB
+*color14: 					#42717B
+!white
+*color7: 					#DDDDDD
+*color15: 					#CCCCCC

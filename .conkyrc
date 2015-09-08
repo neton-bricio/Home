@@ -1,0 +1,53 @@
+use_xft yes
+xftfont 123:size=10
+xftalpha 0.1
+update_interval 1
+total_run_times 0
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 1080 5
+maximum_width 760
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color white
+default_shade_color red
+default_outline_color green
+alignment top_left
+gap_x 320
+gap_y 48
+no_buffers yes
+uppercase no
+cpu_avg_samples 1
+net_avg_samples 1
+override_utf8_locale yes
+use_spacer yes
+
+TEXT
+${voffset 1}${offset 12}${font URW Gothic L Book:pixelsize=13}${color 00CC77}HD ${offset 1}${color ffffff}${fs_free /} / ${fs_size /}${offset 10}${color 00CC77}RAM ${offset 1}${color ffffff}$mem / $memmax${offset 10}${color 00CC77}SWAP ${offset 1}${color ffffff}$swap/$swapmax${offset 10} ${color 00CC77}GHZ  ${offset 1}${color ffffff}${freq_g}${offset 10}${color 00CC77}CPU ${offset 1}${color ffffff}${cpu cpu0}%
+
+${voffset 10}${color 00A2ff}${font GE Inspira:pixelsize=120}${time %H:%M}${font}${voffset -84}${offset 10}${color #A500FF}${font GE Inspira:pixelsize=42}${time %d} ${voffset -15}${color EAEAEA}${font GE Inspira:pixelsize=22}${time  %B} ${time 	%Y}${font}${voffset 24}${font GE Inspira:pixelsize=58}${offset -148}${time %A}${font}
+
+${voffset 1}${offset 12}${font URW Gothic L Book:pixelsize=14}${color A500FF}Uptime ${offset 5}$color${uptime /} ${offset 15}${color A500FF}Kernel ${offset 5}$color${kernel}${offset 15}${color A500FF}Host ${offset 5}$color${nodename}
+
+${alignr}${if_running mocp} ${color 34be5b}moc ${color #FF0000}/${exec mocp -Q %state} ${color #FB8908}${exec mocp -Q %song} ${color}-- ${color #CD3FD7}${exec mocp -Q %artist} ${color #7E7E7E}${exec mocp -Q %ct}/${color #257949}${exec mocp -Q %tt}${color}${else}${endif}
+
+${execi 300 /home/pekman/.Scripts/rss.sh}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

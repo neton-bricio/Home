@@ -1,0 +1,65 @@
+##DiretÃ³rio de ConfiguraÃ§Ãµes
+#MOCDir = ~/.moc
+
+#Appearance
+Theme=/home/pekman/.moc/themes/manjaropek_theme
+
+#Diretórios de mí­dia
+MusicDir = /home/pekman/Músicas
+Fastdir1 =  /Rock
+Fastdir2 = ${MusicDir}/Dance/
+Fastdir3 = ${MusicDir}/mp3/rap
+Fastdir4 = ${MusicDir}/mp3/etc
+
+##Equalizaçao
+Softmixer_SaveState = yes
+Equalizer_SaveState = yes
+
+##Tags
+ID3v1TagsEncoding = UTF-8
+UseRCC = yes
+UseRCCForFilesystem = yes
+EnforceTagsEncoding = no
+TagsCacheSize = 500
+
+##Playlist
+SavePlaylist = yes
+PlaylistNumbering = yes
+FollowPlayedFile = no
+
+##AScii
+ASCIILines = no
+
+##Resampling
+#ResampleMethod = SincBestQuality
+#ResampleMethod = SincMediumQuality
+#ResampleMethod = SincFastest
+ResampleMethod = ZeroOrderHold
+#ResampleMethod = Linear
+
+ForceSampleRate = 48000
+Allow24bitOutput = yes
+
+##ModPlug options
+ModPlug_Oversampling = yes
+ModPlug_NoiseReduction = yes
+ModPlug_Reverb = yes
+ModPlug_MegaBass = yes
+ModPlug_Surround = yes
+ModPlug_ResamplingMode = FIR
+ModPlug_Channels = 2               # 1 or 2 channels
+ModPlug_Bits = 32                  # 8, 16 or 32 bits
+ModPlug_Frequency = 48000          # 11025, 22050, 44100 or 48000 Hz
+ModPlug_ReverbDepth = 100           # 0 (quiet) to 100 (loud)
+ModPlug_ReverbDelay = 200           # Delay in ms (usually 40-200ms)
+ModPlug_BassAmount = 100           # 0 (quiet) to 100 (loud).
+ModPlug_BassRange = 100             # Cutoff in Hz (10-100).
+ModPlug_SurroundDepth = 100         # Surround level 0(quiet)-100(heavy).
+ModPlug_SurroundDelay = 20          # Surround delay in ms, usually 5-40ms.
+ModPlug_LoopCount = 0              # 0 (never), n (times) or -1 (forever)
+
+TiMidity_Config = yes
+TiMidity_Rate = 48000              # Between 8000 and 48000
+TiMidity_Bits = 16                 # 8 or 16
+TiMidity_Channels = 2              # 1 or 2
+TiMidity_Volume = 500              # 0 to 800

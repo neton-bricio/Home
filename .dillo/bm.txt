@@ -1,0 +1,15 @@
+:s0: Ferramentas
+:s1: linux
+:s2: Locais
+s0 https://translate.google.com.br/ Tradutor
+s0 https://translate.google.com.br/ pt - eng
+s0 http://linux.die.net/ Man Page
+s1 http://www.manjaro-linux.com.br/forum/search.php?search_id=newposts&sid=47d8e093047b6ef76cb1112f9d0fc834 Manjaro BR
+s1 http://www.vivaolinux.com.br/screenshots/ Vol
+s1 https://wiki.archlinux.org/ Arch Wiki
+s1 https://www.archlinux.org/packages/ Arch Packages
+s1 https://aur.archlinux.org/ AUR
+s1 http://www.archlinux-br.org/ Arch-Brasil
+s1 https://forum.manjaro.org/ Manjaro Fóruns
+s2 http://www.araguaianoticia.com.br/noticias Araguaia Notícias
+s2 http://semana7.com/noticias/ semana7

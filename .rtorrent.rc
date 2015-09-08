@@ -1,0 +1,109 @@
+###Minha configuração do Rtorrent
+
+###########
+#CHECK HASH
+###########
+
+check_hash = yes
+
+##########
+#DIRETÓRIO
+##########
+
+directory = /home/pekman/Downloads/Torrents/Completos
+#directory = /home/pekman/Torrents/2-Incompletos
+session = /home/pekman/Downloads/Torrents/.session/
+schedule = watch_directory,5,5,load_start=/home/pekman/Downloads/Torrents/1-Preload/*.torrent
+#schedule = untied_directory,5,5,stop_untied=
+#schedule = tied_directory,5,5,start_tied=
+#schedule = 1-Preload_directory_1,10,10,"load_start=/home/pekman/Torrents/1-Preload/*.torrent,d.set_custom1=/home/pekman/Torrents/Completos"
+#schedule = 1-Preload_directory_2,10,10,"load_start=/home/pekman/Torrents/1-Preload/Iso/*.torrent,d.set_custom1=/home/pekman/Torrents/Completos/Iso"
+#schedule = 1-Preload_directory_3,10,10,"load_start=/home/pekman/Torrents/1-Preload/Músicas/*.torrent,d.set_custom1=/home/pekman/Torrents/Completos/Músicas"
+#schedule = 1-Preload_directory_3,10,10,"load_start=/home/pekman/Torrents/1-Preload/Vídeos/*.torrent,d.set_custom1=/home/pekman/Torrents/Completos/Vídeos"
+
+#system.method.insert=checkdirs1,simple,"not=\"$equal={d.get_custom1=,d.get_base_path=}\""
+#system.method.insert=movecheck1,simple,"and={checkdirs1=,d.get_complete=,d.get_custom1=}"
+#system.method.insert=movedir1,simple,"d.set_directory=$d.get_custom1=;execute=mv,-u,$d.get_base_path=,$d.get_custom1=;d.set_custom1=;d.stop=;d.start="
+#system.method.set_key=event.download.hash_done,move_hashed1,"branch={$movecheck1=,movedir1=}"
+
+#########
+#ALOCAÇÃO
+#########
+
+system.file_allocate.set = yes
+schedule = low_diskspace,5,60,close_low_diskspace=100M
+
+#######################
+#CONFIGURAÇÃO DE PORTAS
+#######################
+
+port_range = 49164-49164
+
+#############
+#CRIPTOGRAFIA
+#############
+
+encryption = allow_incoming,try_outgoing,enable_retry
+#encryption = require,require_RC4,allow_incoming,try_outgoing
+
+####
+#DHT
+####
+
+dht = auto
+dht_port = 6881
+peer_exchange = yes
+
+############
+#PERFORMANCE
+############
+
+min_peers = 2
+max_peers = 50
+
+min_peers_seed = 2
+max_peers_seed = 50
+
+max_uploads = 2
+max_downloads = 3
+
+download_rate = 50
+upload_rate = 10
+
+########
+#Display
+########
+
+schedule = filter_active,30,30,"view_filter = active,\"or={d.get_up_rate=,d.get_down_rate=}\""
+
+#
+# PyroScope SETTINGS
+#
+
+# Set "pyro.extended" to 1 to activate rTorrent-PS features!
+# LEAVE THIS AT 0 IF YOU RUN A VANILLA rTorrent!
+#system.method.insert = pyro.extended, value|const, 0
+
+# Set "pyro.bin_dir" to the "bin" directory where you installed the pyrocore tools!
+# Make sure you end it with a "/"; if this is left empty, then the shell's path is searched.
+#system.method.insert = pyro.bin_dir, string|const, 
+
+# Remove the ".default" if you want to change something (else your 
+# changes get over-written on update).
+#system.method.insert = pyro.rc_dialect, string|const|simple, "execute_capture=bash,-c,\"test $1 = 0.8.6 && echo -n 0.8.6 || echo -n #0.8.9\",dialect,$system.client_version="
+#system.method.insert = pyro.rtorrent_rc, string|const|private, "$cat=~/.pyroscope/rtorrent-,\"$pyro.rc_dialect=\",.rc.default"
+#import = $pyro.rtorrent_rc=
+
+# TORQUE: Daemon watchdog schedule
+# Must be activated by touching the "~/.pyroscope/run/pyrotorque" file!
+# Set the second argument to "-v" or "-q" to change log verbosity.
+#schedule = pyro_watchdog,30,300,"pyro.watchdog=~/.pyroscope,"
+#Colors
+
+# Colors (Arch Linux somente!).
+#color_inactive_fg = 4
+#color_dead_fg = 1
+#color_active_fg = 3
+#color_finished_fg = 2
+
+

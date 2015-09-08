@@ -1,0 +1,32 @@
+pcm.upmix71 {
+    type upmix
+    slave.pcm "surround71"
+    delay 15
+    channels 8
+}
+
+	pcm.my_rate {
+		type rate
+		slave.pcm "hw"
+		converter "samplerate_order"
+	}
+
+#	pcm.my_rate {
+#		type rate
+#		slave.pcm "hw"
+#		converter "speexrate_best"
+#	}
+
+
+
+#pcm.dmix6 {
+#   type asym
+#    playback.pcm {
+#        type dmix
+#        ipc_key 567829
+#        slave {
+#            pcm "hw:0,0"
+#            channels 6
+#        }
+#    }
+#}

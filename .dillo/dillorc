@@ -1,0 +1,295 @@
+## Set the desired initial browser size
+## Defina a geometria padrão que o Dillo deve ser inicializado
+# geometry=650x545+0+20
+geometry=1366x768+0+0
+
+## Download Directory
+## Diretório de Downloads
+save_dir=/tmp
+
+# Change this (and the following option) if you want to have text-only browsing
+# from the start. (While browsing, this can be changed from the tools/settings
+# menu.)
+load_images=YES
+
+# Change this if you want background images to be loaded initially.
+# (While browsing, this can be changed from the tools/settings menu.)
+load_background_images=YES
+
+# Change this if you want to disable loading of CSS stylesheets initially.
+# (While browsing, this can be changed from the tools/settings menu.)
+load_stylesheets=YES
+
+# Change this if you want to disable parsing of embedded CSS initially.
+# (While browsing, this can be changed from the tools/settings menu.)
+parse_embedded_css=NO
+
+# Change the buffering scheme for drawing
+# 0 no double buffering - useful for debugging
+# 1 light buffering using a single back buffer for all windows
+# 2 full fltk-based double buffering for all windows
+buffered_drawing=0
+
+# Set your default directory for download/save operations
+save_dir=/tmp
+
+# When set to YES, the page author's visited link color may be overridden
+# to allow better contrast with text/links/background
+contrast_visited_color=YES
+
+# Show tooltip popups for the UI
+show_ui_tooltip=YES
+
+# Start dillo with the panels hidden?
+fullwindow_start=NO
+
+# When filling out forms, our default behaviour is to submit on enterpress,
+# but only when there's a single text entry (to avoid incomplete submits).
+# OTOH, if you have to fill out the same form repeatedly, you may find it
+# useful to keep away from the mouse by forcing enter to submit.
+enterpress_forces_submit=YES
+
+
+##### Default fonts:#########
+# If FLTK has been configured with Xft enabled (the default), you can use
+# scalable fonts such as DejaVu or Liberation (try running
+# "fc-list : family | cut -d ',' -f 2 | sort").
+font_serif="DejaVu Serif"
+#font_sans_serif="DejaVu Sans"
+#font_cursive="URW Chancery L"
+#font_fantasy="DejaVu Sans"
+#font_monospace="DejaVu Sans Mono"
+#
+# Otherwise, use bitmapped fonts like the following (for a list, try running
+# "xlsfonts -fn *-iso10646-1 | grep -v -e -0-0 | cut -d - -f 3 | sort | uniq").
+font_serif="times"
+# font_sans_serif="helvetica"
+# font_cursive="helvetica"
+# font_fantasy="helvetica"
+# font_monospace="courier"
+
+## All fontsizes are scaled by this value
+# font_factor=1.5
+font_factor=1.0
+## Maximum font size in pixels
+font_max_size=100
+## Minimum font size in pixels
+font_min_size=12
+
+###Hiefienization########
+# Penalties are used to control good and bad break points. The bigger
+# the penalty for a given break point, the less likely the line is
+# broken here. "inf" means that breaking is prohibited, "-inf" means
+# that a line *must* be broken here. (The latter should not be used
+# here, however.) Normal spaces get a penalty of 0. The exact
+# definition can be found in doc/dw-line-breaking.doc.
+
+# Penalties for hyphenation breaks; this covers automatic hyphenation,
+# soft hyphens, and unconditional hyphens. Since hyphenation should
+# rather be avoided, the default values are larger than 0.
+
+# This is used for hyphenation points, when there is no hyphen or dash
+# before:
+penalty_hyphen = 10
+
+# This is used for hyphenation points, when the line before ends
+# already with a hyphen or a dash. Consequent lines ending with
+# hyphens or dashes should be avoided, so this value is bigger than
+# "penalty_hyphen":
+penalty_hyphen_2 = 4
+
+# The same for a break right of an em-dash, when there are no spaces
+# surrounding it (as in English). The default values are the same as
+# for hyphens:
+penalty_em_dash_right = 2
+penalty_em_dash_right_2 = 2
+
+# Penalty for a break *left* of an em-dash. Since a line ending with
+# an em-dash (and so breaking right of the em-dash) looks better than
+# a line beginning with an em-dash (breaking left of an em-dash), the
+# default value is bigger than "penalty_em_dash_right":
+penalty_em_dash_left = 8
+
+# Notice that there is no "penalty_em_dash_left_2", since breaking
+# left of an em-dash makes the line *begin*, not *end* with a dash.
+
+# This factor is multiplied with the line height to get the
+# stretchability of a non-justified line. The larger this factor (and
+# thus, the stretchability), the less likely the words are hyphenated;
+# so you can use this value to control hyphenation of non-justified
+# text.
+stretchability_factor=4
+
+
+##Set the start page.
+##Defina a página inicial
+# start_page="about:blank"
+start_page="http://duckduckgo.com/lite/?kp=-1&q="
+# start_page="file:/home/jcid/custom_page.html"
+#start_page="about:splash"
+
+
+## Set the home location
+## home="file:/home/jcid/HomePage/Home.html"
+#home="https://startpage.com/do/mypage.pl?prf=c66e14badc87d4d714b26e3959bb45f7"
+home="http://duckduckgo.com/lite/?kp=-1&q=%s"
+
+## Set the URLs used by the web search dialog.
+## "%s" is replaced with the search keywords separated by '+'.
+## Format: search_url="[<label> ]<url>"
+## You can enable multiple search_url strings at once and select from among
+## them at runtime, with the first being the default.
+search_url="http://www.google.com.br/search?q=%s"
+search_url="https://startpage.com/do/mypage.pl?prf=c66e14badc87d4d714b26e3959bb45f7"
+search_url="http://duckduckgo.com/lite/?kp=-1&q=%s"
+search_url="Wikipedia http://www.wikipedia.org/w/index.php?search=%s&go=Go"
+search_url="Free Dictionary http://www.thefreedictionary.com/%s"
+search_url="https://searx.me/"
+
+# If set, dillo will ask web servers to send pages in this language.
+# This setting does NOT change dillo's user interface.
+# Format explained: www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4
+# Language-REGION values: www.iana.org/assignments/language-subtag-registry
+# (by default, no Accept-Language header is sent)
+# http_language="de"
+http_language="pt-BR"
+#http_language="es,es-ES"
+
+# Maximum number of simultaneous TCP connections to a single server or proxy.
+http_max_conns=8
+
+### UI theme
+## "none" is the default FLTK appearance, which "resembles old Windows...and
+# old GTK/KDE".
+## "plastic" "is inspired by the Aqua user interface on Mac OS X".
+## "gtk+" "is inspired by the Red Hat Bluecurve theme".
+#theme=none
+# theme=gtk+
+#theme=plastic
+
+################
+# UI colors
+# The first four colors map to concepts in the underlying FLTK toolkit. Note
+# that FLTK may sometimes override colors, generally for contrast and
+# readability.
+#
+#ui_fg_color=black
+#ui_main_bg_color=silver
+#ui_text_bg_color=white
+#ui_selection_color=navy
+#
+# Background used when the mouse cursor is over a button.
+ui_button_highlight_color=(by default, the main background color, lightened)
+#
+# Colors for the current tab.
+#ui_tab_active_bg_color=(by default, the text background color)
+ui_tab_active_fg_color=(by default, the main foreground color)
+#
+# Colors for the other tabs.
+#ui_tab_bg_color=(by default, the main background color)
+ui_tab_fg_color=(by default, the main foreground color)
+
+
+# Note to packagers: leaving these variables for the system to guess
+# gives different results in different environments, so we played it safe
+# by defining the traditional colors.  Please choose the color theme that
+# better fits your distro.
+
+#
+# Gray theme (traditional)
+#
+#ui_fg_color=black
+#ui_main_bg_color=#c6c6c6
+#ui_text_bg_color=bfdabf
+#ui_selection_color=#191970
+#ui_button_highlight_color=#a9a9a9
+#ui_tab_active_bg_color=#87aca7
+#ui_tab_active_fg_color=black
+#ui_tab_bg_color=#b7beb7
+
+#
+# Earthly theme:
+#
+#ui_fg_color=#100404
+#ui_main_bg_color=#c2a47b
+#ui_text_bg_color=#cdc9a5
+#ui_selection_color=#763024
+#ui_tab_active_bg_color=#af4b3f
+#ui_tab_active_fg_color=white
+#ui_tab_bg_color=#d2b48c
+
+#
+# Greenish theme:
+#
+ui_fg_color=#000000
+ui_main_bg_color=#323232
+ui_text_bg_color=#bdd8b6
+ui_selection_color=#D47E28
+ui_button_highlight_color=#939393
+ui_tab_active_bg_color=#158341
+ui_tab_active_fg_color=#FFFFFF
+ui_tab_bg_color=#444444
+
+
+# Size of dillo panel (used to enlarge the browsing area)
+# tiny   :  recommended for iPAQ (with small_icons)
+# small  :  very nice! (it's "medium" without icon titles)
+# medium :  nice!
+#panel_size=tiny
+panel_size=small
+#panel_size=medium
+
+# A mouse's middle click over a link opens a new Tab.
+# If you prefer to open a new Window instead, set it to NO.
+middle_click_opens_new_tab=YES
+focus_new_tab=YES
+right_click_closes_tab=YES
+
+# Ask before quitting Dillo with more than one window or tab open.
+show_quit_dialog=NO
+
+# Accepted by the W3C validator but "strongly discouraged" by the SPEC.
+# (Such as "TAB character inside <PRE>").
+show_extra_warnings=NO
+
+# If you prefer more accurate HTML bug diagnosis over better rendering
+# (page authors and webmasters) set the following to "NO".
+w3c_plus_heuristics=YES
+
+# Set the HTTP Referer (sic) header.
+# Note that there is no option to reveal the page that you came from because it
+# would endanger your privacy. 'host' and 'path' allow you to pretend that the
+# link you followed was on the same site that you're going to.
+# none  : Don't send any Referer header at all.
+# host  : Send the requested URI's hostname.
+# path  : Send the requested URI's host and path.
+http_referer=none
+
+# Set the HTTP User-Agent header.
+# This can be useful for privacy and for working around servers who think
+# Dillo is less capable than it really is. However, if you pretend to use a
+# different browser, servers may send you pages that work with the features
+# and bugs of that other browser -- or even disallow access in cases like
+# wget or googlebot. Remember this before submitting bug reports.
+#
+# See http://zytrax.com/tech/web/browser_ids.htm for a compilation of strings.
+#
+#http_user_agent="Mozilla/5.0 (Windows NT 5.1; rv:18.0) Gecko/20100101 Firefox/18.0"
+#http_user_agent="Wget/1.12 (linux-gnu)"
+#The default is "Dillo/"+current_version_number
+#Mozilla/4.0 (compatible; Dillo 2.2)
+http_user_agent=Mozilla/4.0 (compatible; Dillo Dillo/3.0.4)
+#http_user_agent=Googlebot (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+#http_user_agent=Mozilla/5.0 (X11; Linux i686; rv:17.0) Gecko/20121201 icecat/17.0.1
+#http_user_agent=Dillo/3.0.4
+#http_user_agent=Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; chromeframe; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0)
+#http_user_agent=Dillo/0.8.5-i18n-misc
+#http_user_agent=ELinks/0.12~pre2.dfsg0-1ubuntu1-lite (textmode; Debian; Linux 2.6.32-4-jolicloud i686; 143x37-2)
+#http_user_agent=Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2214.91 Safari/537.36
+#http_user_agent=Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2214.91 Safari/537.36
+#http_user_agent=Mozilla/5.0 (Linux; <Android Version>; <Build Tag etc.>) AppleWebKit/<WebKit Rev> (KHTML, like Gecko) Chrome/<Chrome Rev> Mobile #Safari/<WebKit Rev>
+#http_user_agent=Mozilla/5.0 (Android; Tablet; rv:39.0) Gecko/39.0 Firefox/39.0
+#http_user_agent=Mozilla/5.0 (Android; Mobile; rv:39.0) Gecko/39.0 Firefox/39.0
+#http_user_agent=Mozilla/5.0 (BlackBerry; U; BlackBerry 9900; en) AppleWebKit/534.11+ (KHTML, like Gecko) Version/7.1.0.346 Mobile Safari/534.11+
+#http_user_agent=Opera/9.80 (J2ME/MIDP; Opera Mini/9.80 (S60; SymbOS; Opera Mobi/23.348; U; en) Presto/2.5.25 Version/10.54
+#http_user_agent=Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/43.0.2357.61 Mobile/12H143 Safari/600.1.4

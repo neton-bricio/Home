@@ -1,0 +1,9 @@
+# this is a comment
+  EQSET
+  Active: 1
+  # amplify audio by 1.4dB
+  0 1.4
+  # damp frequencies at 100Hz by -4dB, filter bandwidth 1.5 octaves
+  100   1.5 -4
+  # amplify frequencies at 4000Hz by 2dB, filter bandwidth 1.5 octaves
+  4000  1.5 2

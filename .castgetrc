@@ -1,0 +1,83 @@
+[Azilator-Cast]
+url=http://azilator.com.br/azilacast/feed/
+spool=/home/pekman/Músicas/Z-podcast/Azilator-Cast
+
+[Bola-nas-Costas]
+url=http://www.bnci.com.br/blog/feed/podcast/
+spool=/home/pekman/Músicas/Z-podcast/Bola-nas-Costas
+
+[CBN-Lado-b-da-Bola]
+url=http://imagens.globoradio.globo.com/cbn/podcast/programas/lado-b-da-bola.xml
+spool=/home/pekman/Músicas/Z-podcast/CBN/Lado-b-da-Bola
+
+[CBN-Política]
+url=http://imagens.globoradio.globo.com/cbn/podcast/cardapios/politica.xml
+spool=/home/pekman/Músicas/Z-podcast/CBN/Política
+
+[Escribacafe]
+url=http://escribacafe.com/feed/podcast/
+spool=/home/pekman/Músicas/Z-podcast/Escribacafe
+
+[Frango-Cast]
+url=https://feeds.feedburner.com/frangofinopodcast
+spool=/home/pekman/Músicas/Z-podcast/Frango-Cast
+
+[Gorila-Cast]
+url=http://www.gorilapolar.com.br/podcast/feed/GorilaCast.xml
+spool=/home/pekman/Músicas/Z-podcast/Gorila-Cast
+
+[Grifo-Nosso]
+url=https://feeds.feedburner.com/grifonosso/podcast
+spool=/home/pekman/Músicas/Z-podcast/Grifo-Nosso
+
+[Mamilos]
+url=http://feeds.feedburner.com/mamilos
+spool=/home/pekman/Músicas/Z-podcast/Mamilos
+
+[Melhores-do-Mundo]
+url=http://melhoresdomundo.net/feed/podcast/
+spool=/home/pekman/Músicas/Z-podcast/Melhores-do-Mundo
+
+[Na Porteira Cast]
+url=http://naporteiracast.com.br/feed.xml
+spool=/home/pekman/Músicas/Z-podcast/Na-Porteira-Cast
+
+[Omega-Cast]
+url=http://omegastation.com.br/feed/podcast/
+spool=/home/pekman/Músicas/Z-podcast/Omega-Cast
+
+[Papo Tech]
+url=http://papotech.com.br/wordpress/?feed=rss2
+spool=/home/pekman/Músicas/Z-podcast/Papo-Tech
+
+[Pauta-Livre]
+url=http://www.pautalivrenews.com/feed/
+spool=/home/pekman/Músicas/Z-podcast/Pauta-Livre
+
+[Rádio Globo]
+url=http://imagens.globoradio.globo.com/cbn/podcast/cardapios/comentaristas.xml
+spool=/home/pekman/Músicas/Z-podcast/Rádio-Globo
+
+[Radiofobia]
+url=http://radiofobia.com.br/feed/ 
+spool=/home/pekman/Músicas/Z-podcast/Radiofobia
+
+[Rack'n Cast]
+url=http://feeds.feedburner.com/hack-n-cast
+spool=/home/pekman/Músicas/Z-podcast/Hack-n-Cast
+
+#[Radiofobia-Classic]
+#url=http://radiofobia.com.br/category/podcast/feed/?redirect=no
+#spool=/home/pekman/Músicas/Z-podcast/Radiofobia-Classic
+
+[Seres Humanos de Negócios]
+url=http://www.podbr.com/programas/negocios/shn/feed/
+spool=/home/pekman/Músicas/Z-podcast/Seres-Humanos-de-Negócios
+
+[Tecnoligia Aberta]
+url=http://tecnologiaaberta.com.br/feed/opencast/ "Podcast Tecnologia"
+spool=/home/pekman/Músicas/Z-podcast/Tecnoligia-Aberta
+
+[TecnoCast]
+url=https://feeds.feedburner.com/Tecnocast
+spool=/home/pekman/Músicas/Z-podcast/TecnoCast
